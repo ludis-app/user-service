@@ -19,10 +19,10 @@ public class UserService {
 
     public void createUserItems() {
         System.out.println("Data creation started...");
-        userRepository.save(new User(1, "John Doe", "johnyd", "12345", "UK"));
-        userRepository.save(new User(2, "Jane Doe", "janee", "5425", "US"));
-        userRepository.save(new User(3, "me :)", "dima", "6246547", "Bulgaria"));
-        userRepository.save(new User(4, "John Doe The Second", "johnyd2", "12345", "Chile"));
+        userRepository.save(new User(1, "John Doe", "johnyd", "johny@hotmail.com", "12345", "UK"));
+        userRepository.save(new User(2, "Jane Doe", "janee", "jane@hotmail.com","5425", "US"));
+        userRepository.save(new User(3, "me :)", "dima", "dima@gmail.com","6246547", "Bulgaria"));
+        userRepository.save(new User(4, "John Doe The Second", "johnyd2", "second@gmail.com","12345", "Chile"));
         System.out.println("Data creation complete...");
     }
 
