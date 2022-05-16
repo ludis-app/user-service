@@ -1,7 +1,8 @@
 package com.ludis.users;
 
-import com.ludis.users.config.RibbonConfig;
+import com.ludis.users.model.User;
 import com.ludis.users.repository.UserRepository;
+import com.ludis.users.config.RibbonConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
