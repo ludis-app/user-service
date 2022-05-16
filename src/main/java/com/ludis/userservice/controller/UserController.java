@@ -1,11 +1,14 @@
-package com.ludis.users.controller;
+package com.ludis.userservice.controller;
 
 
-import com.ludis.users.model.User;
-import com.ludis.users.service.UserService;
+import com.ludis.userservice.model.User;
+import com.ludis.userservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;

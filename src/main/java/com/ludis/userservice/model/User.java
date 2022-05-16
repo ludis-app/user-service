@@ -1,4 +1,4 @@
-package com.ludis.users.model;
+package com.ludis.userservice.model;
 
 
 import lombok.AllArgsConstructor;

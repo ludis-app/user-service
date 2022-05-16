@@ -1,4 +1,4 @@
-package com.ludis.users.msg;
+package com.ludis.userservice.msg;
 
 import com.rabbitmq.client.*;
 import org.slf4j.Logger;

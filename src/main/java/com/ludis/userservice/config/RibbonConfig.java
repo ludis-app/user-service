@@ -1,4 +1,4 @@
-package com.ludis.users.config;
+package com.ludis.userservice.config;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.IPing;

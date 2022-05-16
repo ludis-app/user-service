@@ -1,10 +1,10 @@
-package com.ludis.users;
+package com.ludis.userservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UsersApplicationTests {
+class UserServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

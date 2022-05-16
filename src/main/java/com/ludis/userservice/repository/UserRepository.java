@@ -1,10 +1,9 @@
-package com.ludis.users.repository;
+package com.ludis.userservice.repository;
 
+import com.ludis.userservice.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
-
-import com.ludis.users.model.User;
 
 import java.util.List;
 

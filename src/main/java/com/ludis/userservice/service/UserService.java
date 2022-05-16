@@ -1,8 +1,7 @@
-package com.ludis.users.service;
+package com.ludis.userservice.service;
 
-import com.ludis.users.model.User;
-import com.ludis.users.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ludis.userservice.model.User;
+import com.ludis.userservice.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

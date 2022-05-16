@@ -1,16 +1,12 @@
-package com.ludis.users;
+package com.ludis.userservice;
 
-import com.ludis.users.model.User;
-import com.ludis.users.repository.UserRepository;
-import com.ludis.users.config.RibbonConfig;
+import com.ludis.userservice.config.RibbonConfig;
+import com.ludis.userservice.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
-import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 @RibbonClient(
 		name = "users-server",
 		configuration = RibbonConfig.class)
-public class UsersApplication {
+public class UserServiceApplication {
 
 	@Bean
 	public RestTemplate restTemplate() {
@@ -36,10 +32,10 @@ public class UsersApplication {
 	private final static String QUEUE_NAME = "users";
 
 	static Logger logger
-			= LoggerFactory.getLogger(UsersApplication.class);
+			= LoggerFactory.getLogger(UserServiceApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(UsersApplication.class, args);
+		SpringApplication.run(UserServiceApplication.class, args);
 	}
 
 }
